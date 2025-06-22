@@ -1,14 +1,16 @@
 # Proje Neva
 
-![Neva Logo](https://hizliresim.com/c2kfifz)  ## ● Takım İsmi
-**Nova Zihinler**
+[![Neva Logo](https://i.hizliresim.com/c2kfifz.png)](https://hizliresim.com/c2kfifz)
+
+## ● Takım İsmi
+**AI Grup 2**
 
 ## ● Takım Rolleri
-* **Proje Lideri & Backend Geliştiricisi:** `[İsim Soyisim]`
-* **Frontend & UI/UX Geliştiricisi:** `[İsim Soyisim]`
-* **Yapay Zeka Mühendisi (LLM & Konuşma Mantığı):** `[İsim Soyisim]`
-* **Yapay Zeka Mühendisi (Ses Teknolojileri - STT/TTS):** `[İsim Soyisim]`
-* **Test & DevOps Sorumlusu:** `[İsim Soyisim]`
+* **Product Owner:** `[Beyza  Erdem]`
+* **Scrum Master:** `[Osman Şener Gürel]`
+* **Developer:** `[Sena Demirbaş]`
+* **Developer:** `[Muhammed Enes Güryeli]`
+* **Developer:** `[Pelinsu İlçin]`
 
 ## ● Ürün İsmi
 **Neva**
