@@ -1,0 +1,15 @@
+# Python Sanal Ortam Klasörü
+venv/
+
+# Gizli API Anahtarını içeren dosya
+.env
+
+# Kullanıcı verileri ve konuşma geçmişleri
+user_data/
+
+# Python'un oluşturduğu geçici dosyalar
+__pycache__/
+*.pyc
+
+# macOS'un oluşturduğu sistem dosyaları (İyi bir pratiktir)
+.DS_Store

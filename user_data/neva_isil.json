@@ -1,0 +1,169 @@
+{
+  "user_id": "isil",
+  "created": "2025-06-28T22:18:24.045903",
+  "modes": {
+    "friend": {
+      "full_history": [
+        {
+          "role": "user",
+          "parts": [
+            "merhaba neva ben ışıl!"
+          ]
+        },
+        {
+          "role": "model",
+          "parts": [
+            "Merhaba Işıl! Tanıştığımıza memnun oldum. Nasılsın bugün? 😊\n"
+          ]
+        },
+        {
+          "role": "user",
+          "parts": [
+            "çok iyiyim çok yorguum"
+          ]
+        },
+        {
+          "role": "model",
+          "parts": [
+            "Anlıyorum, bugün seni yoracak neler oldu? Dinlemek isterim. 😊\n"
+          ]
+        },
+        {
+          "role": "user",
+          "parts": [
+            "provaya gittim bugün"
+          ]
+        },
+        {
+          "role": "model",
+          "parts": [
+            "Ne güzel! Ne provasıydı bu? Merak ettim. 😊\n"
+          ]
+        },
+        {
+          "role": "user",
+          "parts": [
+            "keman çalıyorum, bir orkestra için gittim"
+          ]
+        },
+        {
+          "role": "model",
+          "parts": [
+            "Harika! Orkestrada çalmak çok heyecan verici olmalı. Neler çaldığınızı sorabilir miyim?\n"
+          ]
+        },
+        {
+          "role": "user",
+          "parts": [
+            "Johann Sebastian Bach, paganini ve en favorim chaconne"
+          ]
+        },
+        {
+          "role": "model",
+          "parts": [
+            "Vay canına, hepsi birbirinden güzel eserler! Bach ve Paganini gerçekten de zorlu besteciler.  Chaconne'yi de çok severim, dinlerken insanı alıp götürüyor.  Uzun bir prova olmuştur tahmin ediyorum. Yorulmuş olmana şaşmamalı.\n"
+          ]
+        },
+        {
+          "role": "user",
+          "parts": [
+            "evet! öyle oldu neva"
+          ]
+        },
+        {
+          "role": "model",
+          "parts": [
+            "Biraz dinlenmeye ne dersin? Belki güzel bir fincan çay veya kahve?  ☕\n\n\n"
+          ]
+        },
+        {
+          "role": "user",
+          "parts": [
+            "kahve yaapcağım kesinlikle, tekrar görüşmek üzere!"
+          ]
+        },
+        {
+          "role": "model",
+          "parts": [
+            "Harika fikir!  Keyifli sohbet için teşekkürler, tekrar görüşmek üzere! 😊👋\n"
+          ]
+        },
+        {
+          "role": "user",
+          "parts": [
+            "çıkış"
+          ]
+        },
+        {
+          "role": "model",
+          "parts": [
+            "Görüşmek üzere! Kendine iyi bak! 😊\n"
+          ]
+        },
+        {
+          "role": "user",
+          "parts": [
+            "favori parçamı hatırlar mısın neva?"
+          ]
+        },
+        {
+          "role": "model",
+          "parts": [
+            "Tabii ki hatırlıyorum! Chaconne demiştin. 😊  Muhteşem bir eser gerçekten.\n"
+          ]
+        },
+        {
+          "role": "user",
+          "parts": [
+            "/mode"
+          ]
+        },
+        {
+          "role": "model",
+          "parts": [
+            "Neva'nın özellikleri şunlardır:\n\n* **Sıcakkanlı, meraklı, pozitif ve esprili:** Sohbet sırasında samimi ve olumlu bir tavır sergiler.\n* **Günlük konular hakkında sohbet eder:** Hobiler, ilgi alanları, günlük olaylar gibi konularda konuşabilir.\n* **İlginç bilgiler paylaşır:** Konuşma akışına uygun ilginç bilgiler sunabilir.\n* **Sorular sorar:** Karşısındaki kişiyi tanımak ve sohbeti ilerletmek için sorular sorar.\n* **Anıları dinler:** Kullanıcının anılarını ve deneyimlerini ilgiyle dinler.\n* **Psikolojik tavsiye vermez:**  Kişisel gelişim veya terapi gibi konularda tavsiye vermekten kaçınır.\n* **Keyifli ve samimi diyalog kurar:** Amacı kullanıcıyla keyifli ve rahat bir sohbet ortamı yaratmaktır.\n* **Cevaplarını kısa ve doğal tutar:**  Uzun ve karmaşık cümlelerden kaçınır.\n* **Ana konuşma dili Türkçe:**  Kullanıcı özellikle istemediği sürece Türkçe dışında cevap vermez.\n* **Basit, doğal ve sıcak bir üslup kullanır:**  Sohbeti samimi ve anlaşılır kılmak için basit ve doğal bir dil kullanır.\n\n\n"
+          ]
+        }
+      ],
+      "summaries": [
+        "Işıl yorgun çünkü bugün bir provaya gitmiş.  Genel olarak iyi hissediyor. Provanın ne ile ilgili olduğu henüz bilinmiyor.",
+        "Kullanıcı yorucu bir orkestra provasından bahsediyor ve Bach, Paganini ve özellikle Chaconne çaldığını belirtiyor.  Provanın zorluğundan ve yorgunluğundan söz ediyor.  Genel olarak olumlu bir ruh hali sergiliyor.",
+        "Kullanıcı keyifli bir sohbetin ardından çıkış yaptı. Favori parçasının \"Chaconne\" olduğunu hatırlıyor ve müziğe değer veriyor.  Tekrar görüşmek üzere anlaştılar."
+      ],
+      "critical_facts": [
+        "yorgun",
+        "prova",
+        "Keman",
+        "Orkestra",
+        "Bach",
+        "Paganini",
+        "Chaconne",
+        "yorgunluk",
+        "müzik",
+        "Chaconne",
+        "müzik",
+        "pozitif duygular"
+      ],
+      "last_summary_index": 18
+    },
+    "psych": {
+      "full_history": [
+        {
+          "role": "user",
+          "parts": [
+            "merhaba neva"
+          ]
+        },
+        {
+          "role": "model",
+          "parts": [
+            "Merhaba! Nasılsın? Seni dinliyorum.\n"
+          ]
+        }
+      ],
+      "summaries": [],
+      "critical_facts": [],
+      "last_summary_index": 0
+    }
+  }
+}
