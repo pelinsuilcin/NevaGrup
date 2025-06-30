@@ -1,6 +1,6 @@
 # Proje Neva
 
-[![Neva Logo](https://i.hizliresim.com/c2kfifz.png)](https://hizliresim.com/c2kfifz)
+![Neva Logo](https://i.hizliresim.com/c2kfifz.png)
 
 ## ● Takım İsmi
 **AI Grup 2**
