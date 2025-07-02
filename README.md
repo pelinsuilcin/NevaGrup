@@ -1,6 +1,6 @@
 # Proje Neva
 
-![Neva Logo](https://i.imgur.com/MH1no3T.png)
+<img src="https://i.imgur.com/MH1no3T.png" alt="Neva Logo" width="250">
 
 ## ● Takım İsmi
 **AI Grup 2**
@@ -32,3 +32,50 @@ Neva, modern yaşamın getirdiği stres, kaygı ve yalnızlık gibi zorluklarla 
 
 ## ● Product Backlog
 Bu liste, projenin mevcut ve gelecekteki potansiyel özelliklerini içermektedir.
+
+---
+
+# SPRINT 1 RAPORU
+
+**Sprint Adı/Numarası:** Sprint 1: Projeye Başlangıç  
+**Takım Adı:** Nova Zihinler  
+**Sprint Başlangıç Tarihi:** 29.06.2025  
+**Sprint Bitiş Tarihi:** 02.07.2025
+
+---
+
+### 1. Sprint Hedefi (Sprint Goal)
+Bu sprintin ana hedefi, projenin her dalını bir nebze olsa da ilerletmek ve temelini oluşturmaktı. Ekip arkadaşlarımızla beraber projemizin adını "Neva" olarak seçtikten sonra, kabaca bir şekilde ekipteki herkes ilgili olduğu alanda çalışmalarına başladı.
+
+---
+
+### 2. Tamamlanan İşler (Completed Work)
+- **Sohbet API'si (`/chat`) oluşturuldu:** Uygulama, kullanıcıdan gelen mesajı alıp yapay zeka modeline gönderebiliyor ve modelin cevabını geri döndürebiliyor.
+- **Google Generative AI API’si ile chat kısmı oluşturuldu:** Uygulama tabanı olarak hem bir dost hem de psikolojik bir yapay zeka asistanı olarak, karşısındaki insan ile yazılı olarak konuşma özelliği eklendi.
+- **Kullanıcının chat üzerindeki hafızası `.json` olarak eklendi:** Uygulama kullanıcının önceki konuşma ve fikirlerini hatırlayacak şekilde güncellendi ve konuşma geçmişi kayıt edildi.
+- **Ortak bir çalışma alanı (Github Repo’su) oluşturuldu:** Github üzerinden herkesin erişip çalışabileceği ve PR açabileceği bir ortam oluşturuldu.
+- **Uygulamanın ilk arayüz tasarımı oluşturuldu:** .html ile ara yüz tasarımının ilk hali yapıldı.
+---
+
+### 3. Tamamlanamayan İşler ve Karşılaşılan Zorluklar
+İlk sprintimiz olduğu için net hedefler konulmamıştı, bu yüzden teknik olarak tamamlanamayan bir görev bulunmamaktadır.
+- **Karşılaşılan Zorluk:** Ekip olarak toplu olarak bir toplantıya katılıp fikir alış-verişinde bulunmakta  zorlandık fakat son zamanlarda bu sorunun üstesinden gelindi gibi.
+
+---
+
+### 4. Sprint İlerleme Grafiği (Burndown Chart)
+
+![Sprint 1 Burndown Chart](https://i.imgur.com/XvUqLdA.png)
+
+---
+
+### 5. Sprint Geri Bildirimi (Retrospective'den Notlar)
+- **İyi Gidenler:** Genel olarak uygulamanın geliştirilmesi, herkesin en sonunda senkronize olup yapılacaklara odaklanması ve birbirine kolaylık sağlaması.
+- **Geliştirilmesi Gerekenler:** Takım içi iletişimi daha düzenli hale getirmek ve projedeki boş kalan alanları proaktif olarak doldurmak.
+
+---
+
+### 6. Sonraki Sprint İçin Öncelikli Konular
+- TTS (Text-to-Speech) teknolojisinin belirlenmesi ve implementasyonu.
+- Backend mimarisinin geliştirilmesi.
+- Arayüz tasarımı ve temel kaynak kodlarının geliştirilmesi.
