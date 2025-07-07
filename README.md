@@ -38,7 +38,7 @@ Bu liste, projenin mevcut ve gelecekteki potansiyel özelliklerini içermektedir
 # SPRINT 1 RAPORU
 
 **Sprint Adı/Numarası:** Sprint 1: Projeye Başlangıç  
-**Takım Adı:** Nova Zihinler  
+**Takım Adı:** AI takım 2 
 **Sprint Başlangıç Tarihi:** 29.06.2025  
 **Sprint Bitiş Tarihi:** 02.07.2025
 
@@ -54,28 +54,60 @@ Bu sprintin ana hedefi, projenin her dalını bir nebze olsa da ilerletmek ve te
 - **Google Generative AI API’si ile chat kısmı oluşturuldu:** Uygulama tabanı olarak hem bir dost hem de psikolojik bir yapay zeka asistanı olarak, karşısındaki insan ile yazılı olarak konuşma özelliği eklendi.
 - **Kullanıcının chat üzerindeki hafızası `.json` olarak eklendi:** Uygulama kullanıcının önceki konuşma ve fikirlerini hatırlayacak şekilde güncellendi ve konuşma geçmişi kayıt edildi.
 - **Ortak bir çalışma alanı (Github Repo’su) oluşturuldu:** Github üzerinden herkesin erişip çalışabileceği ve PR açabileceği bir ortam oluşturuldu.
-- **Uygulamanın ilk arayüz tasarımı oluşturuldu:** .html ile ara yüz tasarımının ilk hali yapıldı.
+- **Uygulamanın ilk arayüz tasarımı oluşturuldu:** `.html` ile ara yüz tasarımının ilk hali yapıldı.
+
 ---
 
 ### 3. Tamamlanamayan İşler ve Karşılaşılan Zorluklar
 İlk sprintimiz olduğu için net hedefler konulmamıştı, bu yüzden teknik olarak tamamlanamayan bir görev bulunmamaktadır.
-- **Karşılaşılan Zorluk:** Ekip olarak toplu olarak bir toplantıya katılıp fikir alış-verişinde bulunmakta  zorlandık fakat son zamanlarda bu sorunun üstesinden gelindi gibi.
+- **Karşılaşılan Zorluk:** Ekip olarak toplu olarak bir toplantıya katılıp fikir alış-verişinde bulunmakta zorlandık fakat son zamanlarda bu sorunun üstesinden gelindi gibi.
 
 ---
 
-### 4. Sprint İlerleme Grafiği (Burndown Chart)
+### 4. Sprint Metrikleri ve Puanlama
+
+**Puanlama Mantığı:**
+> Takım olarak bu sprintte işlerin büyüklüğünü tahmin etmek için Fibonacci (1, 2, 3, 5, 8...) ölçeğini kullandık. Puanlar, bir işin saat olarak ne kadar süreceğini değil; karmaşıklığını, belirsizliğini ve gereken eforu temsil eden göreceli bir ölçüttür.
+
+**Sprint Puanları:**
+- **Planlanan Toplam Puan:** 20 Puan
+- **Tamamlanan Toplam Puan:** 15 Puan
+- **Takım Hızı (Velocity):** 15
+
+---
+
+### 5. Sprint İlerleme Grafiği (Burndown Chart)
 
 ![Sprint 1 Burndown Chart](https://i.imgur.com/XvUqLdA.png)
 
 ---
 
-### 5. Sprint Geri Bildirimi (Retrospective'den Notlar)
+### 6. Sprint Review Sonuçları ve Notlar
+
+**Katılımcılar:** Tüm "Neva" takımı.
+
+**Sunulan İşler:**
+- Komut satırı üzerinden çalışan, hafıza yeteneğine sahip temel sohbet uygulaması canlı olarak test edildi.
+- Oluşturulan GitHub deposu ve çalışma kuralları sunuldu.
+
+**Alınan Geri Bildirim (Feedback):**
+- Hafıza özelliğinin çalışması çok beğenildi.
+- Arayüzün bir an önce geliştirilmesi gerektiği belirtildi.
+- Sesli konuşma özelliğinin bir sonraki sprintin ana hedefi olması gerektiği vurgulandı.
+
+**Alınan Kararlar:**
+- Bir sonraki sprintte TTS (Text-to-Speech) özelliğine öncelik verilecek.
+
+---
+
+### 7. Sprint Geri Bildirimi (Retrospective'den Notlar)
+
 - **İyi Gidenler:** Genel olarak uygulamanın geliştirilmesi, herkesin en sonunda senkronize olup yapılacaklara odaklanması ve birbirine kolaylık sağlaması.
 - **Geliştirilmesi Gerekenler:** Takım içi iletişimi daha düzenli hale getirmek ve projedeki boş kalan alanları proaktif olarak doldurmak.
 
 ---
 
-### 6. Sonraki Sprint İçin Öncelikli Konular
+### 8. Sonraki Sprint İçin Öncelikli Konular
 - TTS (Text-to-Speech) teknolojisinin belirlenmesi ve implementasyonu.
 - Backend mimarisinin geliştirilmesi.
 - Arayüz tasarımı ve temel kaynak kodlarının geliştirilmesi.
