@@ -5,7 +5,7 @@ venv/
 .env
 
 # Kullanıcı verileri ve konuşma geçmişleri
-user_data/
+data/
 
 # Python'un oluşturduğu geçici dosyalar
 __pycache__/
@@ -13,3 +13,9 @@ __pycache__/
 
 # macOS'un oluşturduğu sistem dosyaları (İyi bir pratiktir)
 .DS_Store
+
+# Google Cloud Servis Hesabı Anahtarı
+gcp-credentials.json
+
+# IDE ve editör yapılandırma dosyaları
+.idea/
