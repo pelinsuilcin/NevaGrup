@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neva - Kayıt Ol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kayitol.css">
+</head>
+<body>
+    <div class="login-hero">
+        <div class="floating-elements">
+            <div class="floating-element" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+            <div class="floating-element" style="top: 60%; left: 20%; animation-delay: 2s;"></div>
+            <div class="floating-element" style="top: 40%; right: 15%; animation-delay: 4s;"></div>
+            <div class="floating-element" style="top: 80%; right: 25%; animation-delay: 1s;"></div>
+        </div>
+        
+    
+        <div class="auth-container">
+            <div class="auth-box">
+                <h1>Hesap Oluşturun</h1>
+                
+                <button class="auth-provider-btn">
+                    <span>Google ile Devam Et</span>
+                </button>
+                
+                <button class="auth-provider-btn">
+                    <span>Apple ile Devam Et</span>
+                </button>
+                
+                <div class="auth-divider">
+                    <span>veya</span>
+                </div>
+                
+                <form class="auth-form" id="signupForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Ad</label>
+                            <input type="text" id="firstName" required>
+                            <div class="error-message" id="firstNameError">Lütfen geçerli bir ad girin</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Soyad</label>
+                            <input type="text" id="lastName" required>
+                            <div class="error-message" id="lastNameError">Lütfen geçerli bir soyad girin</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-posta Adresi</label>
+                        <input type="email" id="email" required>
+                        <div class="error-message" id="emailError">Lütfen geçerli bir e-posta adresi girin</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Şifre</label>
+                        <input type="password" id="password" required minlength="8">
+                        <div class="password-strength">
+                            <div class="password-strength-bar" id="passwordStrength"></div>
+                        </div>
+                        <div class="error-message" id="passwordError">Şifre en az 8 karakter olmalı</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Şifreyi Onayla</label>
+                        <input type="password" id="confirmPassword" required>
+                        <div class="error-message" id="confirmPasswordError">Şifreler eşleşmiyor</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthDate">Doğum Tarihi</label>
+                        <input type="date" id="birthDate" required>
+                        <div class="error-message" id="birthDateError">Geçerli bir doğum tarihi seçin</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="gender">Cinsiyet (Opsiyonel)</label>
+                        <select id="gender">
+                            <option value="">Seçiniz</option>
+                            <option value="male">Erkek</option>
+                            <option value="female">Kadın</option>
+
+                            <option value="prefer-not-to-say">Belirtmek İstemiyorum</option>
+                        </select>
+                    </div>
+                    
+                    <div class="terms-checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">
+                            <a href="gizlilik.html">Kullanım Koşulları</a> ve <a href="gizlilik.html">Gizlilik Politikası</a>'nı okudum ve kabul ediyorum.
+                        </label>
+                    </div>
+                    <div class="error-message" id="termsError">Devam edebilmek için kabul etmelisiniz</div>
+                    
+                    <button type="submit" class="auth-submit">Hesap Oluştur</button>
+                </form>
+                
+                <div class="auth-footer">
+                    Zaten bir hesabınız var mı? <a href="girisyap.html">Giriş Yapın</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('signupForm');
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
+            const confirmPasswordInput = document.getElementById('confirmPassword');
+            const passwordStrengthBar = document.getElementById('passwordStrength');
+            const birthDateInput = document.getElementById('birthDate');
+            
+            // Şifre güç kontrolü
+            passwordInput.addEventListener('input', function() {
+                const password = this.value;
+                let strength = 0;
+                
+                // Uzunluk kontrolü
+                if (password.length >= 8) strength += 1;
+                if (password.length >= 12) strength += 1;
+                
+                // Karakter çeşitliliği
+                if (/[A-Z]/.test(password)) strength += 1;
+                if (/[0-9]/.test(password)) strength += 1;
+                if (/[^A-Za-z0-9]/.test(password)) strength += 1;
+                
+                // Güç çubuğunu güncelle
+                let width = 0;
+                let color = '#ff4757';
+                
+                if (strength <= 1) {
+                    width = 25;
+                    color = '#ff4757';
+                } else if (strength <= 3) {
+                    width = 50;
+                    color = '#ffa502';
+                } else if (strength <= 4) {
+                    width = 75;
+                    color = '#2ed573';
+                } else {
+                    width = 100;
+                    color = '#00f5ff';
+                }
+                
+                passwordStrengthBar.style.width = width + '%';
+                passwordStrengthBar.style.background = color;
+            });
+            
+            // E-posta doğrulama
+            emailInput.addEventListener('blur', function() {
+                const email = this.value.trim();
+                const emailError = document.getElementById('emailError');
+                
+                if (!email) {
+                    showError(emailError, 'E-posta adresi gereklidir');
+                } else if (!isValidEmail(email)) {
+                    showError(emailError, 'Geçerli bir e-posta adresi girin');
+                } else {
+                    hideError(emailError);
+                    checkEmailAvailability(email);
+                }
+            });
+            
+            // Şifre eşleşme kontrolü
+            confirmPasswordInput.addEventListener('input', function() {
+                const confirmPassword = this.value;
+                const password = passwordInput.value;
+                const confirmPasswordError = document.getElementById('confirmPasswordError');
+                
+                if (confirmPassword !== password) {
+                    showError(confirmPasswordError, 'Şifreler eşleşmiyor');
+                } else {
+                    hideError(confirmPasswordError);
+                }
+            });
+            
+            // Doğum tarihi kontrolü
+            birthDateInput.addEventListener('change', function() {
+                const birthDate = new Date(this.value);
+                const today = new Date();
+                const minAgeDate = new Date();
+                minAgeDate.setFullYear(today.getFullYear() - 13);
+                
+                const birthDateError = document.getElementById('birthDateError');
+                
+                if (!this.value) {
+                    showError(birthDateError, 'Doğum tarihi gereklidir');
+                } else if (birthDate > today) {
+                    showError(birthDateError, 'Geçerli bir doğum tarihi girin');
+                } else if (birthDate > minAgeDate) {
+                    showError(birthDateError, '13 yaşından büyük olmalısınız');
+                } else {
+                    hideError(birthDateError);
+                }
+            });
+            
+            // Form gönderimi
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Tüm alanları kontrol et
+                let isValid = true;
+                
+                // Ad kontrolü
+                if (!document.getElementById('firstName').value.trim()) {
+                    showError(document.getElementById('firstNameError'), 'Ad gereklidir');
+                    isValid = false;
+                }
+                
+                // Soyad kontrolü
+                if (!document.getElementById('lastName').value.trim()) {
+                    showError(document.getElementById('lastNameError'), 'Soyad gereklidir');
+                    isValid = false;
+                }
+                
+                // E-posta kontrolü
+                const email = emailInput.value.trim();
+                if (!email) {
+                    showError(document.getElementById('emailError'), 'E-posta adresi gereklidir');
+                    isValid = false;
+                } else if (!isValidEmail(email)) {
+                    showError(document.getElementById('emailError'), 'Geçerli bir e-posta adresi girin');
+                    isValid = false;
+                }
+                
+                // Şifre kontrolü
+                const password = passwordInput.value;
+                if (password.length < 8) {
+                    showError(document.getElementById('passwordError'), 'Şifre en az 8 karakter olmalı');
+                    isValid = false;
+                }
+                
+                // Şifre eşleşme kontrolü
+                if (password !== confirmPasswordInput.value) {
+                    showError(document.getElementById('confirmPasswordError'), 'Şifreler eşleşmiyor');
+                    isValid = false;
+                }
+                
+                // Doğum tarihi kontrolü
+                if (!birthDateInput.value) {
+                    showError(document.getElementById('birthDateError'), 'Doğum tarihi gereklidir');
+                    isValid = false;
+                }
+                
+                // Kullanım koşulları kontrolü
+                if (!document.getElementById('terms').checked) {
+                    showError(document.getElementById('termsError'), 'Devam edebilmek için kabul etmelisiniz');
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // Formu gönder
+                    alert('Kayıt başarılı! Giriş sayfasına yönlendiriliyorsunuz...');
+                    // Burada gerçek bir kayıt işlemi yapılabilir
+                }
+            });
+            
+            // Yardımcı fonksiyonlar
+            function isValidEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+            
+            function showError(element, message) {
+                element.textContent = message;
+                element.style.display = 'block';
+            }
+            
+            function hideError(element) {
+                element.style.display = 'none';
+            }
+            
+            // E-posta kullanılabilirlik kontrolü (simülasyon)
+            function checkEmailAvailability(email) {
+                // Burada gerçek bir API çağrısı yapılabilir
+                const emailError = document.getElementById('emailError');
+                
+                // Simüle edilmiş kullanılmış e-postalar
+                const usedEmails = ['test@example.com', 'user@neva.com'];
+                
+                if (usedEmails.includes(email)) {
+                    showError(emailError, 'Bu e-posta zaten kullanılıyor');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
