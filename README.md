@@ -38,7 +38,7 @@ Bu liste, projenin mevcut ve gelecekteki potansiyel özelliklerini içermektedir
 # SPRINT 1 RAPORU
 
 **Sprint Adı/Numarası:** Sprint 1: Projeye Başlangıç  
-**Takım Adı:** AI takım 2 
+**Takım Adı:** AI takım 2   
 **Sprint Başlangıç Tarihi:** 29.06.2025  
 **Sprint Bitiş Tarihi:** 02.07.2025
 
@@ -70,9 +70,9 @@ Bu sprintin ana hedefi, projenin her dalını bir nebze olsa da ilerletmek ve te
 > Takım olarak bu sprintte işlerin büyüklüğünü tahmin etmek için Fibonacci (1, 2, 3, 5, 8...) ölçeğini kullandık. Puanlar, bir işin saat olarak ne kadar süreceğini değil; karmaşıklığını, belirsizliğini ve gereken eforu temsil eden göreceli bir ölçüttür.
 
 **Sprint Puanları:**
-- **Planlanan Toplam Puan:** 20 Puan
-- **Tamamlanan Toplam Puan:** 15 Puan
-- **Takım Hızı (Velocity):** 15
+- **Planlanan Toplam Puan:** 18 Puan
+- **Tamamlanan Toplam Puan:** 13 Puan
+- **Takım Hızı (Velocity):** 13
 
 ---
 
@@ -111,3 +111,72 @@ Bu sprintin ana hedefi, projenin her dalını bir nebze olsa da ilerletmek ve te
 - TTS (Text-to-Speech) teknolojisinin belirlenmesi ve implementasyonu.
 - Backend mimarisinin geliştirilmesi.
 - Arayüz tasarımı ve temel kaynak kodlarının geliştirilmesi.
+
+# SPRINT 2 RAPORU
+
+**Sprint Adı/Numarası:** Sprint 2: Projeye Gelişimi   
+**Takım Adı:** AI takım 2   
+**Sprint Başlangıç Tarihi:** 02.07.2025  
+**Sprint Bitiş Tarihi:** 20.07.2025
+
+### 1. Sprint Hedefi (Sprint Goal)
+Bu sprintin ana hedefi, Faz 1'de oluşturulan komut satırı uygulamasını bir adım ileri taşıyarak, ses teknolojilerini (TTS/STT) seçip implemente etmek, projenin statik frontend arayüzünü (HTML/CSS/JS) hayata geçirmek ve backend mimarisinin geliştirilmesiydi.
+
+---
+
+### 2. Tamamlanan İşler (Completed Work)
+- **Frontend Arayüzü Hayata Geçirildi:** Projenin ilk görsel tasarımı, HTML, CSS ve JavaScript kullanılarak statik bir web arayüzüne dönüştürüldü.
+- **Ses Teknolojileri (TTS/STT) Seçildi:** Metinden sese ve sesten metne çeviri işlemleri için Google Cloud'un TTS ve STT servislerinin kullanılmasına karar verildi.
+- **TTS Entegrasyonu Tamamlandı:** Google Cloud TTS servisi, ana uygulama mantığına başarıyla entegre edildi, böylece Neva ile sesli etkileşim mümkün hale geldi ve hafıza sesli iletişimle desteklendi.
+
+---
+
+### 3. Tamamlanamayan İşler ve Karşılaşılan Zorluklar
+- **Tamamlanamayan İşler:**
+  - Backend Mimarisi ve API Entegrasyonu: Backend'in bir web API'sine dönüştürülmesi ve ana bileşenlerin bağlanması görevi tamamlanamadı.
+  - Frontend-Backend Bağlantısı: Statik olarak hazırlanan frontend'in, backend ile haberleşmesi sağlanamadı.
+  - Kullanıcı Veritabanı Yönetimi: Kullanıcı verilerinin yönetileceği veritabanı altyapısı oluşturulamadı.
+- **Karşılaşılan Zorluk:** Frontend ve ses teknolojileri entegrasyonu, tahmin edilenden daha fazla zaman ve detaylı çalışma gerektirdi. Bu nedenle, backend ve API geliştirme görevlerine bu sprintte başlanamadı.
+
+---
+
+### 4. Sprint Metrikleri ve Puanlama
+
+**Puanlama Mantığı:**
+> Takım olarak işlerin büyüklüğünü tahmin etmek için Fibonacci (1, 2, 3, 5, 8...) ölçeğini kullanıyoruz. Puanlar, bir işin saat olarak ne kadar süreceğini değil; karmaşıklığını, eforunu ve belirsizliğini temsil eden göreceli bir ölçüttür.
+
+**Sprint Puanları:**
+- **Planlanan Toplam Puan:** 21
+- **Tamamlanan Toplam Puan:** 13
+- **Takım Hızı (Velocity):** 13
+
+### 5. Sprint İlerleme Grafiği (Burndown Chart)
+
+![Sprint 2 Burndown Chart](https://i.imgur.com/nXTBvpy.png)
+
+---
+
+### 6. Sprint Review Sonuçları ve Notlar
+
+**Sunulan İşler:**
+- Çalışan statik frontend arayüzü ve buton etkileşimleri sunuldu.
+- Komut satırı üzerinden Neva'nın sesli cevap verme yeteneği (TTS) canlı olarak gösterildi.
+
+**Alınan Geri Bildirim (Feedback):**
+- TTS entegrasyonunun başarısı ve frontend'in görsel olarak ilerlemesi olumlu karşılandı.
+- Backend-frontend bağlantısının olmaması, bir sonraki sprint için en yüksek öncelik olarak belirlendi.
+
+---
+
+### 7. Sprint Geri Bildirimi (Retrospective'den Notlar)
+
+- **İyi Gidenler:** Frontend ve ses teknolojileri üzerinde çalışan ekip üyeleri arasında güçlü bir senkronizasyon vardı ve bu alanlarda somut çıktılar elde edildi.
+- **Geliştirilmesi Gerekenler:** Sprint hedefini daha dar ve odaklı belirlemeliyiz. Bu sprintte hem frontend hem de backend bağlantısını tamamlama hedefi fazla iddialıydı.
+
+---
+
+### 8. Sonraki Sprint İçin Öncelikli Konular
+- Backend mimarisini api servisleri kullanarak oluşturmak.
+- Frontend ile Backend arasında API bağlantısını kurmak.
+- Temel kullanıcı veritabanı yapısını oluşturmak.
+- Projenin deploy edilmesi için gerekli adımları atmak.
